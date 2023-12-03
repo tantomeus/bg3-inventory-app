@@ -1,0 +1,59 @@
+.container {
+    background: rgb(35 35 35);
+    max-width: 62.5rem;
+    margin: 10rem auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.form {
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+
+.search, .category {
+    background-color: transparent;
+    border: 1px solid rgb(230 130 15);
+    color: rgb(230 130 15);
+    border-radius: 25px;
+    font-size: 1.25rem;
+    outline: none;
+    padding: 0.25rem 0.75rem;
+    transition: all 0.5s;
+    
+    &:hover {
+        box-shadow: 0 0 5px 0px rgb(230 130 15), 0 0 5px 2.5px #ffc600, 0px 0px 5px 0px rgb(230 130 15);
+    }
+
+    &:focus {
+        box-shadow: 0 0 5px 0px yellow, 0 0 5px 2.5px #ffc600, 0px 0px 5px 0px yellow;
+    }
+}
+
+.category {
+}
+
+.divider {
+    border-color: rgb(230 130 15);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0.25rem;
+    padding: 0.25rem;
+    grid-auto-rows: 5rem;
+    list-style: none;
+    background-color: rgb(230 130 15);
+}
+
+
+
+.cell {
+    background: rgb(35 35 35);
+}
