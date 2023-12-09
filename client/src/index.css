@@ -6,4 +6,5 @@
 
 body {
     background: url('./assets/background.webp') center center / cover no-repeat;
+    min-height: 100vh;
 }
