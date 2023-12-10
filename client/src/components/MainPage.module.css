@@ -5,6 +5,35 @@
     justify-content: center;
 }
 
+.modal {
+    min-height: 100vh;
+    min-width: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #000000ba;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    color: red;
+    font-size: 2rem;
+    z-index: 100;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
 
 .search, .category {
     background-color: transparent;
@@ -88,14 +117,48 @@
 }
 
 .info {
+    font-size: 0.75rem;
     width: 15rem;
-    height: 10rem;
     background: linear-gradient(to bottom,#1B1A1999,#1B1A1999,#1B1A1999,#40295199);
-    position: absolute;
 
+    position: absolute;
+    z-index: 1000;
     left: 50%;
-    bottom: -125%;
+
     transform: translateX(-50%);
 
     padding: 1rem;
+
+    & p {
+        margin-bottom: 1rem;
+    }
+
+    & .attr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    & svg {
+        font-size: 1rem;
+    }
+
+    & button {
+        color: inherit;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 1rem;
+
+        & svg {
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            color: white;
+        }
+    }
 }
+
